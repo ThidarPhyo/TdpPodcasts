@@ -16,6 +16,7 @@
 		524BAF8625E374DD00551047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524BAF8525E374DD00551047 /* Assets.xcassets */; };
 		524BAF8925E374DD00551047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524BAF8725E374DD00551047 /* LaunchScreen.storyboard */; };
 		524BAF9225E377F500551047 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BAF9125E377F500551047 /* MainTabBarController.swift */; };
+		E4EBAB594DA4592FAA077CF5 /* Pods_TdpPodcasts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A352A57D3BC3425D17DDFF66 /* Pods_TdpPodcasts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		524BAF8825E374DD00551047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524BAF8A25E374DD00551047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		524BAF9125E377F500551047 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		9FEB263234EF4E93A0587001 /* Pods-TdpPodcasts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TdpPodcasts.release.xcconfig"; path = "Target Support Files/Pods-TdpPodcasts/Pods-TdpPodcasts.release.xcconfig"; sourceTree = "<group>"; };
+		A352A57D3BC3425D17DDFF66 /* Pods_TdpPodcasts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TdpPodcasts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAC71C7DE84E986CA8B1A0B /* Pods-TdpPodcasts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TdpPodcasts.debug.xcconfig"; path = "Target Support Files/Pods-TdpPodcasts/Pods-TdpPodcasts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +41,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4EBAB594DA4592FAA077CF5 /* Pods_TdpPodcasts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E114E47F31FC5E8C24F4DC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFAC71C7DE84E986CA8B1A0B /* Pods-TdpPodcasts.debug.xcconfig */,
+				9FEB263234EF4E93A0587001 /* Pods-TdpPodcasts.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		523DE0C225F9AF6500B965CB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +71,8 @@
 			children = (
 				524BAF7B25E374DB00551047 /* TdpPodcasts */,
 				524BAF7A25E374DB00551047 /* Products */,
+				1E114E47F31FC5E8C24F4DC1 /* Pods */,
+				6F1E264651B1F20A21576D2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +101,14 @@
 			path = TdpPodcasts;
 			sourceTree = "<group>";
 		};
+		6F1E264651B1F20A21576D2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A352A57D3BC3425D17DDFF66 /* Pods_TdpPodcasts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 524BAF8D25E374DD00551047 /* Build configuration list for PBXNativeTarget "TdpPodcasts" */;
 			buildPhases = (
+				F0C727CC03B45370EDEC65C2 /* [CP] Check Pods Manifest.lock */,
 				524BAF7525E374DB00551047 /* Sources */,
 				524BAF7625E374DB00551047 /* Frameworks */,
 				524BAF7725E374DB00551047 /* Resources */,
+				B912DCBFAFC9BB04EF2E98C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B912DCBFAFC9BB04EF2E98C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TdpPodcasts/Pods-TdpPodcasts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TdpPodcasts/Pods-TdpPodcasts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TdpPodcasts/Pods-TdpPodcasts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0C727CC03B45370EDEC65C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TdpPodcasts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		524BAF7525E374DB00551047 /* Sources */ = {
@@ -303,6 +372,7 @@
 		};
 		524BAF8E25E374DD00551047 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFAC71C7DE84E986CA8B1A0B /* Pods-TdpPodcasts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +392,7 @@
 		};
 		524BAF8F25E374DD00551047 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEB263234EF4E93A0587001 /* Pods-TdpPodcasts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
